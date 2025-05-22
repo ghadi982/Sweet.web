@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Sweet Bites - Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="contact.html">Contact us</a>
+             <a href="locations.html"> Our Locations</a>
+            <a href="menu.html">Menu</a>
+           <div class="logo">Sweet Bites</div>
+            <a href="order.html">Order Now!</a>
+            <a href="  Bites.html">Main Page</a>
+            <a href="account.html">Account</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Account Information</h1>
+        <div id="login-form">
+        <form onsubmit="return showSuccessMessage()">
+            <h2>Login to Your Account</h2>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"required><br><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+             <button type="submit">Login</button>
+ 
+    </form>
+       </div>
+            <script>
+    function showSuccessMessage() {
+      document.getElementById("login-form").innerHTML= "<h1>Thank You Login Successful</h1>";
+      return false; 
+    }
+  
+</script>
+        
+    </main>
+</body>
+</html>
